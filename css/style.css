@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
+
+.login-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: #e3f2fd;
+    background-image: url('../img/background-aluno.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.login-wrapper.login-teacher {
+    background-color: #e3f2fd;
+    background-image: url('../img/background-docente.svg');
+}
+
+.login-wrapper.login-officials {
+    background-color: #e3f2fd;
+    background-image: url('../img/background-officials.svg');
+}
+
+.login-components {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.login-components.login-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.login-components .login-logo {
+    margin-bottom: 30px;
+}
+
+.login-components .login-logo > img {
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    width: 100px;
+    height: 100px;
+}
+
+.login-components .login-title {
+    margin-bottom: 30px;
+}
+
+.login-components .login-title > h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(0, 0, 0, .7);
+    font-weight: 300;
+    margin: 0px;
+    padding: 0px;
+}
+
+.login-components .login-title > h1 > span {
+    font-weight: 600;
+}
+
+.login-divider {
+    border: .5px solid rgba(0, 0, 0, .1);
+}
+
+.login-components form {
+    min-width: 375px;
+}
+
+.login-components .login-form {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+}
+
+.login-components .login-form .login-form-components {
+    width: 100%;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: -10px 20px 50px rgba(144, 202, 249, .3);
+}
+
+.login-components .login-form .login-form-components .login-input-field > input {
+    font-family: 'Montserrat', sans-serif !important;
+    border: none;
+    outline: none;
+    width: 87%;
+    background-color: transparent;
+    height: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 14px !important;
+}
+
+.login-components .login-form .login-form-btn {
+    position: relative;
+    right: 40px;
+}
+
+.login-components .login-form .login-form-btn > button {
+    transition: .250s;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 12px !important;
+    border: none;
+    outline: none;
+    text-align: center;
+    width: 90px;
+    border-radius: 4px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #1e88e5;
+    color: #fff;
+    box-shadow: -10px 7px 35px rgba(25, 118, 210, .3);
+    font-weight: 500;
+}
+
+.login-components .login-form .login-form-btn > button:hover {
+    background-color: #009688;
+}
+
+.login-components .login-forgot-pass {
+    margin-top: 30px;
+    width: 375px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.login-components .login-forgot-pass > a {
+    color: #2196f3;
+    font-size: 14px;
+}
+
+.login-toast-alert {
+    display: none;
+    font-family: 'Montserrat', sans-serif !important;
+    position: absolute;
+    z-index: 1000;
+    left: 0px;
+    bottom: 0px;
+    background-color: #212121;
+    padding: 15px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    color: #fff;
+}
+
